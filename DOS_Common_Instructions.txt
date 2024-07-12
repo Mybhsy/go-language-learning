@@ -1,0 +1,21 @@
+Dos: Disk Operating System 磁盘操作系统
+
+md test100 //创建test100目录
+dir //查看当前目录
+cd  /d f:   //切换到F盘
+cd d:\test100   //切换到D盘test100目录（使用绝对路径切换）
+cd abc100       //切换到当前目录下abc100目录 (相对路径)
+cd ,,       //回到上级目录
+cd \        //回到根目录
+md test100 test200  //创建多个目录，用空格间隔 test100 test200
+rd  test100 //删除test100目录 （rd 的目录下不能有文件）
+rd test100 test200 //删除多个目录 用空格间隔
+rd /q/s test100 // /q参数代表不用询问 /s参数代表整体删除 可删除test100目录及下面所有子目录 （操作有风险，最好带询问）
+echon hello > d:\teest100\abc100\abc.txt //创建abc.txt文件并追加内容hello
+copy abc.txt d:\test100 //拷贝abc.txt 到D盘的test100目录
+copy abd.txt d:\test100\pk.txt  //拷贝abc.txt 到D盘的test100目录并命名为pk.txt
+move abc.txt f:\   //剪切abc.txt到 F盘
+del abc.txt     //删除一个文件
+del *.txt   //删除所有.txt后缀文件
+cls     //清屏
+exit    //退出DOS
